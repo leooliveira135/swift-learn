@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A75A71691D14807500D6EA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A71681D14807500D6EA10 /* AppDelegate.swift */; };
+		A75A716B1D14807500D6EA10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A716A1D14807500D6EA10 /* ViewController.swift */; };
+		A75A716E1D14807500D6EA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75A716C1D14807500D6EA10 /* Main.storyboard */; };
+		A75A71701D14807500D6EA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75A716F1D14807500D6EA10 /* Assets.xcassets */; };
+		A75A71731D14807500D6EA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A75A71651D14807400D6EA10 /* Eggplant Brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eggplant Brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75A71681D14807500D6EA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A75A716A1D14807500D6EA10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A75A716D1D14807500D6EA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A75A716F1D14807500D6EA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A75A71721D14807500D6EA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A75A71741D14807500D6EA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A75A71621D14807400D6EA10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A75A715C1D14807400D6EA10 = {
+			isa = PBXGroup;
+			children = (
+				A75A71671D14807400D6EA10 /* Eggplant Brownie */,
+				A75A71661D14807400D6EA10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A75A71661D14807400D6EA10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A75A71651D14807400D6EA10 /* Eggplant Brownie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A75A71671D14807400D6EA10 /* Eggplant Brownie */ = {
+			isa = PBXGroup;
+			children = (
+				A75A71681D14807500D6EA10 /* AppDelegate.swift */,
+				A75A716A1D14807500D6EA10 /* ViewController.swift */,
+				A75A716C1D14807500D6EA10 /* Main.storyboard */,
+				A75A716F1D14807500D6EA10 /* Assets.xcassets */,
+				A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */,
+				A75A71741D14807500D6EA10 /* Info.plist */,
+			);
+			path = "Eggplant Brownie";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A75A71641D14807400D6EA10 /* Eggplant Brownie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75A71771D14807500D6EA10 /* Build configuration list for PBXNativeTarget "Eggplant Brownie" */;
+			buildPhases = (
+				A75A71611D14807400D6EA10 /* Sources */,
+				A75A71621D14807400D6EA10 /* Frameworks */,
+				A75A71631D14807400D6EA10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eggplant Brownie";
+			productName = "Eggplant Brownie";
+			productReference = A75A71651D14807400D6EA10 /* Eggplant Brownie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A75A715D1D14807400D6EA10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Leonardo Oliveira";
+				TargetAttributes = {
+					A75A71641D14807400D6EA10 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A75A71601D14807400D6EA10 /* Build configuration list for PBXProject "Eggplant Brownie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A75A715C1D14807400D6EA10;
+			productRefGroup = A75A71661D14807400D6EA10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A75A71641D14807400D6EA10 /* Eggplant Brownie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A75A71631D14807400D6EA10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75A71731D14807500D6EA10 /* LaunchScreen.storyboard in Resources */,
+				A75A71701D14807500D6EA10 /* Assets.xcassets in Resources */,
+				A75A716E1D14807500D6EA10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A75A71611D14807400D6EA10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75A716B1D14807500D6EA10 /* ViewController.swift in Sources */,
+				A75A71691D14807500D6EA10 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A75A716C1D14807500D6EA10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A75A716D1D14807500D6EA10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A75A71721D14807500D6EA10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A75A71751D14807500D6EA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A75A71761D14807500D6EA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A75A71781D14807500D6EA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Eggplant Brownie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casa.treino.Eggplant-Brownie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A75A71791D14807500D6EA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Eggplant Brownie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casa.treino.Eggplant-Brownie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A75A71601D14807400D6EA10 /* Build configuration list for PBXProject "Eggplant Brownie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75A71751D14807500D6EA10 /* Debug */,
+				A75A71761D14807500D6EA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75A71771D14807500D6EA10 /* Build configuration list for PBXNativeTarget "Eggplant Brownie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75A71781D14807500D6EA10 /* Debug */,
+				A75A71791D14807500D6EA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A75A715D1D14807400D6EA10 /* Project object */;
+}
