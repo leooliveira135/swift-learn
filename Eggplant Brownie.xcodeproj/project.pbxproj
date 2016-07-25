@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A75A71691D14807500D6EA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A71681D14807500D6EA10 /* AppDelegate.swift */; };
-		A75A716B1D14807500D6EA10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A716A1D14807500D6EA10 /* ViewController.swift */; };
-		A75A716E1D14807500D6EA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75A716C1D14807500D6EA10 /* Main.storyboard */; };
 		A75A71701D14807500D6EA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75A716F1D14807500D6EA10 /* Assets.xcassets */; };
 		A75A71731D14807500D6EA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */; };
+		A75A71811D1480E900D6EA10 /* views in Resources */ = {isa = PBXBuildFile; fileRef = A75A71801D1480E900D6EA10 /* views */; };
+		A75A71831D14811500D6EA10 /* viewcontrollers in Resources */ = {isa = PBXBuildFile; fileRef = A75A71821D14811500D6EA10 /* viewcontrollers */; };
+		A75A71851D14811C00D6EA10 /* models in Resources */ = {isa = PBXBuildFile; fileRef = A75A71841D14811C00D6EA10 /* models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A75A71651D14807400D6EA10 /* Eggplant Brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eggplant Brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75A71681D14807500D6EA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A75A716A1D14807500D6EA10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A75A716D1D14807500D6EA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A75A716F1D14807500D6EA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75A71721D14807500D6EA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75A71741D14807500D6EA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A75A71801D1480E900D6EA10 /* views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = views; sourceTree = "<group>"; };
+		A75A71821D14811500D6EA10 /* viewcontrollers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = viewcontrollers; sourceTree = "<group>"; };
+		A75A71841D14811C00D6EA10 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		A75A71671D14807400D6EA10 /* Eggplant Brownie */ = {
 			isa = PBXGroup;
 			children = (
+				A75A71841D14811C00D6EA10 /* models */,
+				A75A71821D14811500D6EA10 /* viewcontrollers */,
+				A75A71801D1480E900D6EA10 /* views */,
 				A75A71681D14807500D6EA10 /* AppDelegate.swift */,
-				A75A716A1D14807500D6EA10 /* ViewController.swift */,
-				A75A716C1D14807500D6EA10 /* Main.storyboard */,
 				A75A716F1D14807500D6EA10 /* Assets.xcassets */,
 				A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */,
 				A75A71741D14807500D6EA10 /* Info.plist */,
@@ -123,8 +126,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75A71731D14807500D6EA10 /* LaunchScreen.storyboard in Resources */,
+				A75A71831D14811500D6EA10 /* viewcontrollers in Resources */,
+				A75A71851D14811C00D6EA10 /* models in Resources */,
 				A75A71701D14807500D6EA10 /* Assets.xcassets in Resources */,
-				A75A716E1D14807500D6EA10 /* Main.storyboard in Resources */,
+				A75A71811D1480E900D6EA10 /* views in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A75A716B1D14807500D6EA10 /* ViewController.swift in Sources */,
 				A75A71691D14807500D6EA10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A75A716C1D14807500D6EA10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A75A716D1D14807500D6EA10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
