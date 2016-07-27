@@ -9,24 +9,24 @@
 import Foundation
 
 class Meal {
-    let name:String
-    let happiness: Int
-    var items: Array<Item>()
+    let name:String;
+    let happiness: Int;
+    var items = Array<Item>();
     
     init(name:String, happiness:Int){
-        self.name = name
-        self.happiness = happiness
+        self.name = name;
+        self.happiness = happiness;
     }
     
     func allCalories()->Double{
-        println("Calculating")
-        var total = 0
+        print("Calculating");
+        var total:Double = 0.00;
         
         for i in items{
-            total += i.calories
+            total = total + i.calories;
         }
         
-        return total
+        return total;
     }
 }
 

@@ -10,20 +10,26 @@
 		A75A71691D14807500D6EA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A71681D14807500D6EA10 /* AppDelegate.swift */; };
 		A75A71701D14807500D6EA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75A716F1D14807500D6EA10 /* Assets.xcassets */; };
 		A75A71731D14807500D6EA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */; };
-		A75A71811D1480E900D6EA10 /* views in Resources */ = {isa = PBXBuildFile; fileRef = A75A71801D1480E900D6EA10 /* views */; };
-		A75A71831D14811500D6EA10 /* viewcontrollers in Resources */ = {isa = PBXBuildFile; fileRef = A75A71821D14811500D6EA10 /* viewcontrollers */; };
-		A75A71851D14811C00D6EA10 /* models in Resources */ = {isa = PBXBuildFile; fileRef = A75A71841D14811C00D6EA10 /* models */; };
+		A76270C71D46F7C7009ADCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7216B151D46EBAD001B0095 /* Main.storyboard */; };
+		A7A904111D492B9C0086C940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A904101D492B9C0086C940 /* ViewController.swift */; };
+		A7F5C7B11D49341100CF6A10 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5C7AF1D49341100CF6A10 /* Item.swift */; };
+		A7F5C7B21D49341100CF6A10 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5C7B01D49341100CF6A10 /* Meal.swift */; };
+		A7F5C7B31D493AD100CF6A10 /* Meal.swift in Resources */ = {isa = PBXBuildFile; fileRef = A7F5C7B01D49341100CF6A10 /* Meal.swift */; };
+		A7F5C7B41D493ADA00CF6A10 /* Item.swift in Resources */ = {isa = PBXBuildFile; fileRef = A7F5C7AF1D49341100CF6A10 /* Item.swift */; };
+		A7F5C7B51D493ADA00CF6A10 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = A7A904101D492B9C0086C940 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7216B061D46DC10001B0095 /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
+		A7216B0F1D46E7BB001B0095 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7216B151D46EBAD001B0095 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Eggplant Brownie/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A75A71651D14807400D6EA10 /* Eggplant Brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eggplant Brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75A71681D14807500D6EA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75A716F1D14807500D6EA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75A71721D14807500D6EA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A75A71741D14807500D6EA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A75A71801D1480E900D6EA10 /* views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = views; sourceTree = "<group>"; };
-		A75A71821D14811500D6EA10 /* viewcontrollers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = viewcontrollers; sourceTree = "<group>"; };
-		A75A71841D14811C00D6EA10 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
+		A7A904101D492B9C0086C940 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7F5C7AF1D49341100CF6A10 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A7F5C7B01D49341100CF6A10 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,15 @@
 		A75A71671D14807400D6EA10 /* Eggplant Brownie */ = {
 			isa = PBXGroup;
 			children = (
-				A75A71841D14811C00D6EA10 /* models */,
-				A75A71821D14811500D6EA10 /* viewcontrollers */,
-				A75A71801D1480E900D6EA10 /* views */,
+				A7F5C7AF1D49341100CF6A10 /* Item.swift */,
+				A7F5C7B01D49341100CF6A10 /* Meal.swift */,
+				A7A904101D492B9C0086C940 /* ViewController.swift */,
+				A7216B151D46EBAD001B0095 /* Main.storyboard */,
+				A7216B0F1D46E7BB001B0095 /* Info.plist */,
+				A7216B061D46DC10001B0095 /* model */,
 				A75A71681D14807500D6EA10 /* AppDelegate.swift */,
 				A75A716F1D14807500D6EA10 /* Assets.xcassets */,
 				A75A71711D14807500D6EA10 /* LaunchScreen.storyboard */,
-				A75A71741D14807500D6EA10 /* Info.plist */,
 			);
 			path = "Eggplant Brownie";
 			sourceTree = "<group>";
@@ -125,11 +133,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F5C7B41D493ADA00CF6A10 /* Item.swift in Resources */,
+				A7F5C7B51D493ADA00CF6A10 /* ViewController.swift in Resources */,
+				A7F5C7B31D493AD100CF6A10 /* Meal.swift in Resources */,
+				A76270C71D46F7C7009ADCDF /* Main.storyboard in Resources */,
 				A75A71731D14807500D6EA10 /* LaunchScreen.storyboard in Resources */,
-				A75A71831D14811500D6EA10 /* viewcontrollers in Resources */,
-				A75A71851D14811C00D6EA10 /* models in Resources */,
 				A75A71701D14807500D6EA10 /* Assets.xcassets in Resources */,
-				A75A71811D1480E900D6EA10 /* views in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F5C7B21D49341100CF6A10 /* Meal.swift in Sources */,
+				A7A904111D492B9C0086C940 /* ViewController.swift in Sources */,
+				A7F5C7B11D49341100CF6A10 /* Item.swift in Sources */,
 				A75A71691D14807500D6EA10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,10 +255,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Eggplant Brownie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.casa.treino.Eggplant-Brownie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -254,10 +269,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Eggplant Brownie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.casa.treino.Eggplant-Brownie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -280,6 +298,7 @@
 				A75A71791D14807500D6EA10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
