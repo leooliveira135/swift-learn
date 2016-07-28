@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MealsTableViewController: UITableViewController {
+class MealsTableViewController: UITableViewController,AddAMealDelegate {
     
     var meals = [
         Meal(name: "Eggplant brownie", happiness: 5),
@@ -49,6 +49,11 @@ class MealsTableViewController: UITableViewController {
         
         return cell;
     }
+    
+    func add(meal: Meal){
+        meals.append(meal);
+        tableView.reloadData();
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -85,14 +90,13 @@ class MealsTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "addMeal"{
+            let view = segue.destinationViewController as! ViewController;
+            view.delegate = self;
+        }
     }
-    */
-
 }
