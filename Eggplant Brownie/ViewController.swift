@@ -28,11 +28,15 @@ class ViewController: UIViewController {
         }
         let name = self.nameField!.text;
         let happiness = Int(self.happinessField!.text!);
-        if happiness == nil{
+        if happiness == nil || happiness > 5{
             return;
         }
         let meal = Meal(name: name!, happiness: happiness!);
         print("eaten: \(meal.name) \(meal.happiness)");
+        
+        if let navigation = self.navigationController{
+            navigation.popViewControllerAnimated(true);
+        }
     }
 }
 
