@@ -18,7 +18,7 @@ protocol UITableViewDataSource: NSObjectProtocol{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
 }
 
-class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, AddAnItemDelegate {
     
     var items = [
         Item(name: "Eggplant Brownie", calories: 10),
@@ -30,7 +30,9 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     ];
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        let newItemButton = UIBarButtonItem(title: "New Item", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showNewItem"));
+        navigationItem.rightBarButtonItem = newItemButton;
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -63,6 +65,22 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         if let navigation = self.navigationController{
             navigation.popViewControllerAnimated(true);
         }
+    }
+    
+    @IBAction func showNewItem(){
+        let newItem = NewItemViewController(delegate: self);
+        if let navigation = navigationController{
+            navigation.pushViewController(newItem, animated: true);
+        }
+    }
+    
+    @IBOutlet weak var tableView: UITableView?
+    func addNew(item: Item) {
+        items.append(item);
+        if tableView == nil{
+            return;
+        }
+        tableView!.reloadData();
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
