@@ -47,12 +47,36 @@ class MealsTableViewController: UITableViewController,AddAMealDelegate {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil);
         cell.textLabel!.text = meal.name;
         
+        let longPress = UILongPressGestureRecognizer(target: self, action: Selector("showDetails:"));
+        cell.addGestureRecognizer(longPress);
+        
         return cell;
     }
     
     func add(meal: Meal){
         meals.append(meal);
         tableView.reloadData();
+    }
+    
+    func showDetails(recognizer: UILongPressGestureRecognizer){
+        if recognizer.state == UIGestureRecognizerState.Began{
+            
+            let cell = recognizer.view as! UITableViewCell;
+            let indexPath = tableView.indexPathForCell(cell);
+            if indexPath == nil{
+                return;
+            }
+            
+            let row = indexPath!.row;
+            let meal = meals[row];
+            print("meal: \(meal.name) \(meal.happiness)");
+            
+            let details = UIAlertController(title: meal.name, message: meal.details(), preferredStyle: UIAlertControllerStyle.Alert);
+            
+            let ok = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil);
+            details.addAction(ok);
+            presentViewController(details, animated: true, completion: nil);
+        }
     }
 
     /*
