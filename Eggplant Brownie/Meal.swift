@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Meal {
+class Meal: NSObject, NSCoding {
     let name:String;
     let happiness: Int;
     var items = Array<Item>();
@@ -16,6 +16,12 @@ class Meal {
     init(name:String, happiness:Int){
         self.name = name;
         self.happiness = happiness;
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.name = aDecoder.decodeObjectForKey("name") as! String;
+        self.happiness = aDecoder.decodeObjectForKey("happiness") as! Int;
+        self.items = aDecoder.decodeObjectForKey("items") as! Array<Item>;
     }
     
     func allCalories()->Double{
@@ -37,6 +43,12 @@ class Meal {
         }
         
         return message;
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(self.name, forKey: "name");
+        aCoder.encodeObject(self.happiness, forKey: "happiness");
+        aCoder.encodeObject(self.items, forKey: "items");
     }
 }
 

@@ -22,8 +22,8 @@ class RemoveMealController {
         let remove = UIAlertAction(title: "Remove", style: UIAlertActionStyle.Destructive, handler: handler);
         details.addAction(remove);
         
-        let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil);
-        details.addAction(cancel);
+        let ok = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil);
+        details.addAction(ok);
         
         controller.presentViewController(details, animated: true, completion: nil);
     }
