@@ -69,16 +69,17 @@ class MealsTableViewController: UITableViewController,AddAMealDelegate {
             
             let row = indexPath!.row;
             let meal = meals[row];
+
+            RemoveMealController(controller: self).show(meal, handler: {
+                action in
+                self.meals.removeAtIndex(row);
+                self.tableView.reloadData();
+            });
+            
             print("meal: \(meal.name) \(meal.happiness)");
-            
-            let details = UIAlertController(title: meal.name, message: meal.details(), preferredStyle: UIAlertControllerStyle.Alert);
-            
-            let ok = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil);
-            details.addAction(ok);
-            presentViewController(details, animated: true, completion: nil);
         }
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
