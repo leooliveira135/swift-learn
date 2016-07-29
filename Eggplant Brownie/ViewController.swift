@@ -45,26 +45,36 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     var delegate:AddAMealDelegate?
     
     @IBAction func add(){
+        if let meal = getMealFromForm(){
+            if let meals = delegate{
+                meals.add(meal);
+                
+                if let navigation = self.navigationController{
+                    navigation.popViewControllerAnimated(true);
+                }
+                else{
+                    Alert(controller: self).show("Unexpected error, but the meal was added.");
+                }
+                
+                return;
+            }
+        }
+        Alert(controller: self).show();
+    }
+    
+    func getMealFromForm()->Meal?{
         if nameField == nil || happinessField == nil{
-            return;
+            return nil;
         }
         let name = self.nameField!.text;
         let happiness = Int(self.happinessField!.text!);
         if happiness == nil || happiness > 5{
-            return;
+            return nil;
         }
         let meal = Meal(name: name!, happiness: happiness!);
         meal.items = selected;
         print("eaten: \(meal.name) \(meal.happiness) \(meal.items)");
-        
-        if delegate == nil{
-            return;
-        }
-        delegate!.add(meal);
-        
-        if let navigation = self.navigationController{
-            navigation.popViewControllerAnimated(true);
-        }
+        return meal;
     }
     
     @IBAction func showNewItem(){
@@ -72,15 +82,20 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         if let navigation = navigationController{
             navigation.pushViewController(newItem, animated: true);
         }
+        else{
+            Alert(controller: self).show();
+        }
     }
     
     @IBOutlet weak var tableView: UITableView?
     func addNew(item: Item) {
         items.append(item);
-        if tableView == nil{
-            return;
+        if let table = tableView{
+            table.reloadData();
         }
-        tableView!.reloadData();
+        else{
+            Alert(controller:self).show("Unexpected error, but the item was added");
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
