@@ -13,13 +13,7 @@ class MealsTableViewController: UITableViewController,AddAMealDelegate {
     var meals = Array<Meal>();
 
     override func viewDidLoad() {
-        let userDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,
-            NSSearchPathDomainMask.UserDomainMask, true);
-        let dir = getUserDir();
-        let archive = "\(dir)/eggplant-bronwie-meals";
-        if let loaded = NSKeyedUnarchiver.unarchiveObjectWithFile(archive){
-            self.meals = loaded as! Array;
-        }
+        meals = Dao().loadMeals();
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -60,11 +54,7 @@ class MealsTableViewController: UITableViewController,AddAMealDelegate {
     
     func add(meal: Meal){
         meals.append(meal);
-        let userDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,
-            NSSearchPathDomainMask.UserDomainMask, true);
-        let dir = userDir[ 0 ] as String;
-        let archive = "\(dir)/eggplant-bronwie-meals";
-        NSKeyedArchiver.archiveRootObject(meals, toFile: archive);
+        Dao().saveMeals(meals);
         tableView.reloadData();
     }
     

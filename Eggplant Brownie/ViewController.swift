@@ -26,11 +26,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         super.viewDidLoad();
         let newItemButton = UIBarButtonItem(title: "New Item", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showNewItem"));
         navigationItem.rightBarButtonItem = newItemButton;
-        let dir = getUserDir();
-        let archive = "\(dir)/eggplant-brownie-items";
-        if let loaded = NSKeyedUnarchiver.unarchiveObjectWithFile(archive){
-            items = loaded as! Array;
-        }
+        items = Dao().loadItems();
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -88,9 +84,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     @IBOutlet weak var tableView: UITableView?
     func addNew(item: Item) {
         items.append(item);
-        let dir = getUserDir();
-        let archive = "\(dir)/eggplant-brownie-items";
-        NSKeyedArchiver.archiveRootObject(items, toFile: archive);
+        Dao().saveItems(items);
         if let table = tableView{
             table.reloadData();
         }
